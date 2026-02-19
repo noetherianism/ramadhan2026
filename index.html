@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jadwal Menu Buka Puasa Masjid Jogja — Ramadan 1447 H / 2026 M">
+  <meta name="theme-color" content="#0C3328">
+  <title>Jadwal Buka Puasa Masjid Jogja — Ramadan 1447 H</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ════════════════════════════════════
+       LOADING SCREEN
+       (muncul sebelum data siap)
+  ════════════════════════════════════ -->
+  <div class="loading-screen" id="loadingScreen" aria-live="polite" aria-label="Memuat data...">
+    <svg class="loading-moon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M55 40C55 55.5 44 68 30 68C16 68 5 55.5 5 40C5 24.5 16 12 30 12C24 18 21 28.5 21 40C21 51.5 24 62 30 68C44 68 55 24.5 55 40Z"
+            fill="#E8C96A" opacity="0.9"/>
+      <circle cx="62" cy="22" r="4" fill="#F0D88A" opacity="0.7"/>
+      <circle cx="70" cy="35" r="2.5" fill="#F0D88A" opacity="0.5"/>
+    </svg>
+    <span class="loading-text">Memuat jadwal…</span>
+  </div>
+
+  <!-- ════════════════════════════════════
+       HEADER
+  ════════════════════════════════════ -->
+  <header class="header" role="banner">
+    <div class="header-bg" aria-hidden="true"></div>
+    <div class="header-pattern" aria-hidden="true"></div>
+
+    <!-- Bintang-bintang (diisi oleh JS) -->
+    <div class="stars" id="stars" aria-hidden="true"></div>
+
+    <div class="header-inner">
+      <!-- Ikon bulan sabit -->
+      <svg class="moon-svg" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M55 40C55 55.5 44 68 30 68C16 68 5 55.5 5 40C5 24.5 16 12 30 12C24 18 21 28.5 21 40C21 51.5 24 62 30 68C44 68 55 24.5 55 40Z"
+              fill="#E8C96A" opacity="0.9"/>
+        <circle cx="62" cy="22" r="4" fill="#F0D88A" opacity="0.7"/>
+        <circle cx="70" cy="35" r="2.5" fill="#F0D88A" opacity="0.5"/>
+        <circle cx="58" cy="42" r="1.5" fill="#F0D88A" opacity="0.35"/>
+      </svg>
+
+      <h1>Jadwal Menu Buka Puasa<br>Masjid Jogja</h1>
+      <p class="header-sub">Ramadan 1447 H &bull; 2026 M &bull; Yogyakarta</p>
+    </div>
+
+    <!-- Gelombang bawah header -->
+    <div class="header-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 50" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0 50 L0 25 Q360 0 720 25 Q1080 50 1440 20 L1440 50 Z" fill="#FEFAF2"/>
+      </svg>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════
+       DATE NAVIGATOR (sticky strip)
+  ════════════════════════════════════ -->
+  <nav class="date-nav-wrap" role="navigation" aria-label="Navigasi tanggal Ramadan">
+    <div class="date-strip-outer">
+      <!-- Pill-pill tanggal diisi oleh JS -->
+      <div class="date-strip" id="dateStrip" role="list"></div>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════
+       MAIN CONTENT
+  ════════════════════════════════════ -->
+  <main class="main" id="main" role="main">
+
+    <!-- Search Bar -->
+    <div class="search-bar" role="search">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/>
+        <path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Cari menu atau nama masjid…"
+        autocomplete="off"
+        aria-label="Cari menu atau nama masjid"
+      >
+      <button
+        id="searchClear"
+        class="search-clear"
+        onclick="clearSearch()"
+        aria-label="Hapus pencarian"
+        title="Hapus"
+      >✕</button>
+    </div>
+
+    <!-- Day Navigation Arrows -->
+    <div class="day-nav" id="dayNav" role="navigation" aria-label="Pindah hari">
+      <button
+        class="nav-btn"
+        id="prevBtn"
+        onclick="changeDay(-1)"
+        aria-label="Hari sebelumnya"
+        title="Hari sebelumnya (←)"
+      >
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path d="M15 18l-6-6 6-6"/>
+        </svg>
+      </button>
+
+      <span class="nav-label" id="navLabel" aria-live="polite"></span>
+
+      <button
+        class="nav-btn"
+        id="nextBtn"
+        onclick="changeDay(1)"
+        aria-label="Hari berikutnya"
+        title="Hari berikutnya (→)"
+      >
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path d="M9 18l6-6-6-6"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Dynamic Content Area (diisi oleh JS) -->
+    <section id="contentArea" aria-live="polite" aria-atomic="false"></section>
+
+  </main>
+
+  <!-- ════════════════════════════════════
+       SCROLL TO TOP
+  ════════════════════════════════════ -->
+  <button
+    class="scroll-top"
+    id="scrollTop"
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    aria-label="Kembali ke atas"
+    title="Kembali ke atas"
+  >
+    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- ════════════════════════════════════
+       SCRIPTS
+  ════════════════════════════════════ -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>

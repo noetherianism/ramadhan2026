@@ -1,0 +1,55 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+jobs:
+  validate-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate JSON data
+        run: |
+          python3 -c "
+          import json
+          with open('data/jadwal.json') as f:
+              data = json.load(f)
+          assert 'jadwal' in data, 'Missing jadwal key'
+          assert 'mosques' in data, 'Missing mosques key'
+          assert len(data['jadwal']) > 0, 'No schedule entries'
+          mc = len(data['mosques'])
+          for i, day in enumerate(data['jadwal']):
+              assert len(day['menus']) == mc, f'Day {i+1}: {len(day[\"menus\"])} menus, expected {mc}'
+          print(f'✅ Valid: {len(data[\"jadwal\"])} days, {mc} mosques')
+          "
+
+      - name: Validate required files
+        run: |
+          for f in index.html service-worker.js manifest.json; do
+            test -f "$f" && echo "✅ $f" || (echo "❌ Missing $f" && exit 1)
+          done
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel@latest
+
+      - name: Pull Vercel Environment
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy Preview (PRs)
+        if: github.event_name == 'pull_request'
+        run: |
+          url=$(vercel deploy --token=${{ secrets.VERCEL_TOKEN }})
+          echo "### 🔗 Preview: $url" >> $GITHUB_STEP_SUMMARY
+
+      - name: Deploy Production (main)
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }}

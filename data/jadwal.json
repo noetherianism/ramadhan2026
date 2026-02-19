@@ -1,0 +1,584 @@
+{
+  "meta": {
+    "title": "Jadwal Menu Buka Puasa Masjid Jogja",
+    "tahun_hijriah": "1447 H",
+    "tahun_masehi": "2026",
+    "ramadan_start": "2026-02-18",
+    "total_hari": 31,
+    "kota": "Yogyakarta"
+  },
+  "mosques": [
+    { "id": 0, "nama": "Masjid Pogung Dalangan (MPD)",         "singkatan": "MPD" },
+    { "id": 1, "nama": "Masjid Nurul Ashri (Nurash)",           "singkatan": "Nurash" },
+    { "id": 2, "nama": "Masjid Jogokariyan",                    "singkatan": "Jogokariyan" },
+    { "id": 3, "nama": "Masjid Agung Syuhada",                  "singkatan": "Syuhada" },
+    { "id": 4, "nama": "Masjid Kampus (Maskam) UGM",            "singkatan": "Maskam UGM" },
+    { "id": 5, "nama": "Masjid Mardliyyah UGM",                 "singkatan": "Mardliyyah" },
+    { "id": 6, "nama": "Masjid Ulil Albab (UII)",               "singkatan": "Ulil Albab" },
+    { "id": 7, "nama": "Masjid Al-Muqtashidin (FBE UII)",       "singkatan": "Al-Muqtashidin" },
+    { "id": 8, "nama": "Masjid UMY",                            "singkatan": "UMY" },
+    { "id": 9, "nama": "Masjid Walidah Dahlan (UNISA)",         "singkatan": "UNISA" },
+    { "id": 10, "nama": "Teras Dakwah",                         "singkatan": "Teras Dakwah" },
+    { "id": 11, "nama": "Masjid K.H. Sudja' (Ramadan Fest #5)", "singkatan": "KH Sudja" }
+  ],
+  "jadwal": [
+    {
+      "tanggal": "2026-02-18",
+      "ramadan_ke": 1,
+      "menus": [
+        "-",
+        "Ayam Bekakak (Sunda, Jawa Barat)",
+        "Opor Ayam Telur",
+        "Nasi Kuning Khas Jawa",
+        "Nasi Putih, Sate Lilit Ayam, Tumis Daun Pepaya, Tahu Crispy, Sambal Matah, Kerupuk, Buah, Air Mineral",
+        "Nasi Putih, Ayam Lado Hijau, Tempe Mendoan, Pokcoy Saus Tiram, Kerupuk, Jeruk, Air Mineral (800 Porsi)",
+        "Pepes Ayam khas Bandung",
+        "(Belum ada jadwal)",
+        null,
+        "Ayam Goreng Tepung, Capcay Sayur, Tempe Goreng & Takjil Kolak Pisang",
+        "Joglo Resodinomo: Spesial menu dari Joglo Resodinomo",
+        "Soto Daging (Makanan Khas Betawi)"
+      ]
+    },
+    {
+      "tanggal": "2026-02-19",
+      "ramadan_ke": 2,
+      "menus": [
+        "Opor ayam, tumis buncis tempe, sambel, krupuk",
+        "Ikan Bakar Manokwari (Manokwari, Papua Barat)",
+        "Daging Giling",
+        "Rica-rica Ayam Khas Manado",
+        "Nasi Putih, Ayam Cabai Ijo, Tumis Pakcoy Wortel, Tempe Goreng, Buah, Air Mineral",
+        "Nasi Putih, Ayam Bakar, Oseng Tempe, Orak Arik Bakso, Kerupuk, Buah, Air Mineral (800 Porsi)",
+        "Nasi Tempong khas Banyuwangi",
+        "Spesial Chicken Katsu",
+        "Nasi, Ayam kentucy, tumis jipang wortel, tahu asin, saos saset, Es Sirup Melon Selasih",
+        "Ayam Kecap, Sup, Tahu & Takjil Koktail Buah",
+        "Bistik Galantin Semur: Nasi putih dan ayam bakar dilengkapi lalapan sehat",
+        "Opor Ayam (Makanan Khas Surabaya)"
+      ]
+    },
+    {
+      "tanggal": "2026-02-20",
+      "ramadan_ke": 3,
+      "menus": [
+        "Daging rendang, kuah, lalapan",
+        "Ayam Taliwang (Lombok, NTB)",
+        "Tongseng Ayam",
+        "Nasi Uduk Khas Jakarta",
+        "Nasi Putih, Bandeng Presto Selimut, Tumis Labu Kacang Panjang, Tahu Crispy, Sambal, Kerupuk, Buah, Air Mineral",
+        "Nasi Putih, Paha Fillet Goreng, Tahu Mekar, Tumis Pelangi, Kerupuk, Buah, Air Mineral (800 Porsi)",
+        "Soto banjar khas Banjarmasin",
+        "Crispy Chicken Biryani",
+        "Nasi, beef blackpaper, Tumis baby buncis bakso ikan, tempe goreng, Cocopandan es",
+        "Bakmoi & Takjil Es Dawet",
+        "Joglo Kewaregan: Spesial Menu dari Joglo Kewaregan",
+        "Ikan Patin Woku Kemangi (Makanan Khas Manado)"
+      ]
+    },
+    {
+      "tanggal": "2026-02-21",
+      "ramadan_ke": 4,
+      "menus": [
+        "Ikan tuna cabe ijo, lodeh, krupuk",
+        "Rendang (Minang, Sumatera Barat)",
+        "Bestik Komplit",
+        "Soto Kudus Khas Kudus",
+        "Nasi Putih, Ayam Teriyaki Dadu, Telur Ceplok, Kwetiau Goreng, Puding, Air Mineral",
+        "Nasi Putih, Ayam Bacem, Tahu Mutiara, Tumis Kacang Tempe, Kerupuk, Jeruk, Air Mineral (800 Porsi)",
+        "Gulai Ayam khas Sumatera Barat",
+        "Spesial Ayam Daun Jeruk",
+        "Nasi, Ayam goreng bacem, oseng tempe lombok ijo, bakwan jagung, Kolak pisang",
+        "Gurame Fillet, Capcay Sayur, Bihun, Kerupuk & Takjil Puding",
+        "BM3: Hidangan Spesial dari BM3",
+        "Telur Balado Sayur Nangka Santan (Makanan Khas Manado)"
+      ]
+    },
+    {
+      "tanggal": "2026-02-22",
+      "ramadan_ke": 5,
+      "menus": [
+        "Ayam semur kuah, tumis jipang, krupuk",
+        "Sate Bandeng (Banten, Banten)",
+        "Gulai Sapi",
+        "Nasi Langgi Khas Solo",
+        "Nasi Daun Jeruk, Ayam Rempah, Tumis Daun Singkong, Orek Tempe Kacang Teri Sambal, Kerupuk, Buah, Air Mineral",
+        "Nasi Putih, Ayam Kecap Rempah, Tahu Cabe Garam, Tumis Jamur Putren, Kerupuk, Jeruk, Air Mineral (800 Porsi)",
+        "Ayam Serundeng khas Jawa",
+        "Crispy Chicken Steak",
+        "Nasi, rica rica ayam, lalapan kol dan cabe utuh, tempe garit, kerupuk, Stup jambu",
+        "Sate Ayam, Kerupuk, & Takjil Es Buah",
+        "Nasi Ayam Balado: Nasi putih dengan menu ayam balado",
+        "Ayam Bakar Areh (Makanan Khas Klaten)"
+      ]
+    },
+    {
+      "tanggal": "2026-02-23",
+      "ramadan_ke": 6,
+      "menus": [
+        "Gudeg ayam krecek",
+        "Nasi Megono (Pekalongan, Jawa Tengah)",
+        "Cok Genem",
+        "Soto Kaki Jangi Khas Semarang",
+        "Nasi Putih, Ayam Lada Hitam, Tumis Sayur, Tempe Crispy, Buah, Air Mineral",
+        "Nasi Putih, Ikan Patin Goreng, Tahu Goreng, Gulai & Sambal, Kerupuk, Jeruk, Air Mineral (800 Porsi)",
+        "Nasi Liwet khas Bandung",
+        "Ayam Goreng Rempang Komplit",
+        "Nasi, Chiken katsu, orak arik buncis wortel, Tahu cabe garam, Kolak ubi",
+        "Telur Balado, Bihun Goreng, Tumis Sayur & Takjil Kolak Pisang",
+        "Nasi Pindang Balado: Nasi putih dan Pindang Balado pedas nikmat",
+        "Sayur Ndeso Telur (Makanan Khas Klaten)"
+      ]
+    },
+    {
+      "tanggal": "2026-02-24",
+      "ramadan_ke": 7,
+      "menus": [
+        "Tongseng daging + kobis, lalapan timun, kemangi, krupuk",
+        "Sego Tempong (Banyuwangi, Jawa Timur)",
+        "Bakmoy Telur",
+        "Soto Banjar Khas Banjar",
+        "Nasi Putih, Steak Ayam Tepung, Saus Steak Mix Vegetable, Tahu Crispy, Kerupuk, Buah, Air Mineral",
+        "Nasi Putih, Ikan Nila Fillet, Sambal Goreng Hati Sapi, Kare Buncis, Kerupuk, Buah, Air Mineral (800 Porsi)",
+        "Sate Madura",
+        "Grilled Chicken Rice",
+        "Nasi, sosis asam manis, cap cay jamur kuping, nugget goreng, orange es",
+        "Opor Ayam, Krupuk & Takjil Koktail Buah",
+        "Nasi Ayam Kecap: Nasi putih dan ayam kecap mantap gurih manis",
+        "Nasi Sate Ayam Madura (Makanan Khas Madura)"
+      ]
+    },
+    {
+      "tanggal": "2026-02-25",
+      "ramadan_ke": 8,
+      "menus": [
+        "Ayam goreng, kare jipang, sambel krupuk",
+        "Ikan Bakar Dabu-dabu (Manado, Sulawesi Utara)",
+        "Soto Daging Sapi",
+        "Sate Madura Khas Madura",
+        "Nasi Putih, Ayam Kecap, Tumis Kacang Panjang, Orek Tempe, Buah, Air Mineral",
+        "Nasi Putih, Telur Semur Pedas, Tahu Bakso, Oseng Kacang Panjang, Kerupuk, Buah, Air Mineral (800 Porsi)",
+        "Rendang",
+        "Spesial Ayam Kremes Jumbo",
+        "Nasi, beef blakpeper, saute mix vegetable, kerupuk, Es tea",
+        "Nila bakar, Tumis Sayur, Tahu Sambel & Takjil Es Kuwut",
+        "Gudeg Hj. Rini: Hidangan khas Jogja banget",
+        "Soto Lamongan (Makanan Khas Lamongan)"
+      ]
+    },
+    {
+      "tanggal": "2026-02-26",
+      "ramadan_ke": 9,
+      "menus": [
+        "Ikan tuna balado, oseng kacang panjang taoge, kerupuk",
+        "Sei Sapi (Kupang, NTT)",
+        "Tongseng Ayam",
+        "Nasi Padang Khas Padang",
+        "Nasi Putih, Ayam Fillet, Capcay, Tahu Crispy, Buah, Air Mineral",
+        "Nasi Putih, Gurameh Fillet, Galantin Asam Manis, Oseng Labu Siam Tempe, Kerupuk, Pisang, Air Mineral (800 Porsi)",
+        "Ayam Taliwang khas NTB",
+        "Nasi Bakar Ayam Extra Telur",
+        "Nasi, Ayam bakar taliwang, tumis kacang panjang wortel, jamur krispy, Stup nanas",
+        "Ayam Bakar, Sambel, Capcay Sayur & Takjil Puding",
+        "Nasi Rica Ayam Pedas: Nasi putih dan ayam Rica-rica pedas",
+        "Nasi Padang Lele (Makanan Khas Minang)"
+      ]
+    },
+    {
+      "tanggal": "2026-02-27",
+      "ramadan_ke": 10,
+      "menus": [
+        "Tongseng ayam, cah sawi kembang kol, krupuk",
+        "Ayam Woku (Minahasa, Sulawesi Utara)",
+        "Brongkos",
+        "Nasi Goreng Sunda Khas Sunda",
+        "Nasi Putih, Rendang Sapi, Oseng Teri Daun Pepaya, Tempe Crispy, Sambal, Buah, Air Mineral",
+        "Nasi Putih, Ayam Kremes Daun Jeruk, Orek Tempe, Tumis Buncis Jagung Muda, Kerupuk, Jeruk, Air Mineral (800 Porsi)",
+        "Nila Bakar khas Sumatera",
+        "Spesial Nasi Daun Jeruk Ayam Serundeng",
+        "Nasi, Ayam geprek, lalapan (kol dan timun), tempe garit, sambel bawang, Leci es",
+        "Ayam Kremes, Cah Sayur, Sambel, Krupuk & Takjil Es Buah",
+        "Joglo Kewaregan: Spesial Menu dari Joglo Kewaregan",
+        "Special Menu"
+      ]
+    },
+    {
+      "tanggal": "2026-02-28",
+      "ramadan_ke": 11,
+      "menus": [
+        "Ikan tuna kuah padang, lalapan",
+        "Tahu Gimbal (Sunda, Jawa Barat)",
+        "Bestik Galantine",
+        "Coto Makassar Khas Makassar",
+        "Nasi Putih, Nila Bakar Madu, Orak Arik Buncis Wortel, Rolade Tahu, Krupuk, Air Mineral, Pisang",
+        "Nasi Putih, Ikan Asam Manis, Tahu Cabe Garam, Capcay Goreng, Kerupuk, Pisang, Air Mineral (700 Porsi)",
+        "Ayam Bumbu Hitam khas Madura",
+        "Spesial Lele Bakar Asap",
+        "Nasi, bandeng presto goreng telur, tumis jipang kacang panjang, sambel bawang, tahu asin, Es Buah",
+        "Gule Ayam, Lalap, Krupuk, & Takjil Kolak Pisang",
+        "BM3: Hidangan Spesial dari BM3",
+        "Ayam Woku Belanga (Makanan Khas Manado)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-01",
+      "ramadan_ke": 12,
+      "menus": [
+        "Rawon daging, lalapan timun, kobis, kemangi, krupuk",
+        "Bebek Bumbu Hitam (Madura, Madura)",
+        "Sop Kembang Waru",
+        "Rawon Khas Ponorogo",
+        "Nasi Putih, Ikan Fillet Ayam Tepung Saus Inggris, Tumis Caisim, Kering Tempe, Kerupuk, Air Mineral, Jeruk",
+        "Nasi Putih, Galantin Semur, Sambal Goreng Kentang, Oseng Janggel Telur Puyuh, Kerupuk, Buah, Air Mineral (700 Porsi)",
+        "Ayam Kuah Kuning khas Papua",
+        "Nasi Ayam Kuah Gulai Komplit",
+        "Nasi, lele goreng, lalapan padang, kuah padang, sambel ijo, Es buah",
+        "Ayam Lengkuas, Sup, Perkedel & Takjil Koktail Buah",
+        "Nasi Telur Balado: Nasi putih dengan menu telur balado",
+        "Gado-gado Telur Rebus (Makanan Khas Jakarta)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-02",
+      "ramadan_ke": 13,
+      "menus": [
+        "Ayam bacem, kare buncis wortel, sambel, krupuk",
+        "Nasi Liwet Pasundan (Sunda, Jawa Barat)",
+        "Tongseng Ayam",
+        "Garang Asem Khas Kudus",
+        "Nasi Putih, Ayam Betutu, Tumis Tahu Sayur Tauco, Bakwan Jagung, Kerupuk, Air Mineral, Jeruk",
+        "Nasi Putih, Ikan Tuna Goreng, Nugget Ayam, Ca Sawi & Saus, Kerupuk, Buah, Air Mineral (700 Porsi)",
+        "Telur Woku khas Makassar",
+        "Spesial Ayam Rica Komplit",
+        "Nasi, Ayam teriyaki, salad bento (kol dan wortel), tahu bakso goreng, saos mayo pedas, Es kopyor",
+        "Nasi Kebuli/Briyani & Takjil Es Kuwut",
+        "Fried Chicken Berkah: Nasi putih dan ayam goreng gurih",
+        "Ikan Kembung Kuah Kuning (Makanan Khas Papua/Maluku)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-03",
+      "ramadan_ke": 14,
+      "menus": [
+        "Ikan bandeng presto, lodeh, sambel krupuk",
+        "Ikan Parape (Makassar, Sulawesi Selatan)",
+        "Empal Gentong",
+        "Tongseng Ayam Khas Semarang",
+        "Nasi Putih, Beef Slice Lada Hitam, Tumis Pakcoy, Bakso, Bakwan Sayur, Kerupuk, Air Mineral, Jeruk",
+        "Nasi Putih, Srundeng Paru, Tahu Nirang, Oseng Daun Pepaya, Kerupuk, Pisang, Air Mineral (700 Porsi)",
+        "Ayam Betutu khas Bali",
+        "Nasi Ayam Bumbu Rendang Komplit",
+        "Nasi, bistik bola ayam, tumis buncis wortel, Bakwan jagung, Es Lemon tea",
+        "Chicken Katsu, Sambel, Cah Sayur & Takjil Puding",
+        "Nasi Telur Semur: Menu telur semur gurih manis sedap mantap",
+        "Ayam Bakar Taliwang (Makanan Khas Lombok)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-04",
+      "ramadan_ke": 15,
+      "menus": [
+        "Gulai ayam, lalapan, krupuk",
+        "Pecel Lele (Lamongan, Jawa Timur)",
+        "Sop Ayam",
+        "Soto Semarang Khas Solo",
+        "Nasi Putih, Ayam Bakar Bumbu Rujak, Tumis Daun Singkong, Teri, Bakwan Jagung, Kerupuk, Air Mineral, Jeruk",
+        "Nasi Putih, Telor Balado, Kering Tempe, Sayur Asem & Sambel Terasi, Kerupuk, Kelengkeng, Air Mineral (700 Porsi)",
+        "Ayam Goreng Lunak khas Jawa",
+        "Black Pepper Chicken and Rice",
+        "Nasi, Nila bakar madu, lalapan (kemangi timun selada), sambel bawang, Strawberry es",
+        "Soto Ayam, Perkedel, Krupuk & Takjil Es Buah",
+        "Aqiqah Al-Kautsar: Menu spesial dari Aqiqah Al-Kautsar",
+        "Soto Banjar (Makanan Khas Banjarmasin)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-05",
+      "ramadan_ke": 16,
+      "menus": [
+        "Tongseng daging + kobis, timun, krupuk",
+        "Nasi Kuning Bumbu Habang (Banjarmasin, Kalimantan Selatan)",
+        "Tongseng Daging",
+        "Nasi Rames Khas Jawa Tengah",
+        "Nasi Putih, Ayam Bakar Areh, Oseng Ndeso Ati, Rolade Tahu, Kerupuk, Air Mineral, Jeruk",
+        "Nasi Putih, Cumi Saos Hitam, Sapo Tahu, Oseng Buncis, Kerupuk, Jeruk, Air Mineral (500 Porsi)",
+        "Mangut Nila khas Jogja",
+        "Grilled Chicken and Rice",
+        "Nasi, Balado ayam, kering tempe kacang tanah, bakwan sayur, Es capucino cincau",
+        "Ayam Bakar, Sambel, Capcay Sayur & Takjil Kolak Pisang",
+        "Nasi Sarden Pindang: Nasi Sarden Bumbu Pindang",
+        "Gulai Ayam Kubis Oseng (Makanan Khas Sumatera)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-06",
+      "ramadan_ke": 17,
+      "menus": [
+        "Ayam krispi, oseng jipang tahu, sambel krupuk",
+        "Sate Maranggi (Purwakarta, Jawa Tengah)",
+        "Rendang Daging",
+        "Soto Betawi Khas Betawi",
+        "Nasi Putih, Rendang Sapi, Tumis Daun Singkong ala Padang, Tahu Goreng, Kerupuk, Air Mineral, Pisang",
+        "Nasi Putih, Ikan Tuna Balado, Bakwan Jagung, Tumis Kacang Panjang, Kerupuk, Buah, Air Mineral (500 Porsi)",
+        "Ayam Suwir khas Bali",
+        "Crispy Chicken Biryani",
+        null,
+        "Mangut Lele, Krupuk & Takjil Koktail Buah",
+        "Q-Chicken: Ayam goreng dari brand Q-Chicken",
+        "Empal Gentong (Makanan Khas Cirebon)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-07",
+      "ramadan_ke": 18,
+      "menus": [
+        "Ikan tuna cabe ijo, oseng kacang panjang, krupuk",
+        "Gudeg (Jogja, DIY)",
+        "Tongseng Ayam",
+        "Gulai Balak Khas Lampung",
+        "Nasi Putih, Bistik Daging, Tumis Buncis Sambal Goreng, Kentang Krecek, Kerupuk, Puding, Air Mineral",
+        "Nasi Putih, Sambel Goreng Kreni, Tahu Bacem, Tumis Sawi Putih Jagung Bakso, Kerupuk, Buah, Air Mineral (500 Porsi)",
+        "Ayam Bakar khas Jawa",
+        "Chicken Curry with Biryani Rice",
+        null,
+        "Nasi Kebuli/Briyani & Takjil Es Kuwut",
+        "BM3: Hidangan Spesial dari BM3",
+        "Ayam Goreng Lengkuas (Makanan Khas Bandung)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-08",
+      "ramadan_ke": 19,
+      "menus": [
+        "Brongkos daging, tumis buncis, krupuk",
+        "Ayam Betutu (Bali, Bali)",
+        "Garang Asem",
+        "Soto Tangkar Khas Betawi",
+        "Nasi Putih, Serundeng Daging, Tumis Labu Siam, Tahu Isi, Kerupuk, Buah, Air Mineral",
+        "Nasi Putih, Bistik Bola Daging, Tempe Pedas Manis, Buncis Singapur, Kerupuk, Pisang, Air Mineral (500 Porsi)",
+        "Nasi Goreng Jawa",
+        "Spesial Lele Bakar Asap",
+        null,
+        "Tongseng Ayam, Krupuk, Tempe & Takjil Puding",
+        "Nasi Ayam Bakar: Nasi putih dan ayam dengan bumbu bakar",
+        "Nasi Uduk Ayam (Makanan Khas Jakarta)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-09",
+      "ramadan_ke": 20,
+      "menus": [
+        "Ayam bakar, kare buncis wortel, sambel krupuk",
+        "Sate Ayam Ponorogo (Ponorogo, Jawa Timur)",
+        "Sop Daging Sapi",
+        "Nasi Gandul Khas Pati",
+        "Nasi Putih, Ayam Panggang Bali, Urap Sayur, Tempe Mendoan, Sambal Lalapan, Kerupuk, Buah, Air Mineral",
+        "Nasi Putih, Telur Barendo, Tempe Krispi, Sayur Kuah Kacang Panjang Kol & Sambal Ijo, Kerupuk, Salak, Air Mineral (500 Porsi)",
+        "Nasi Bakar khas Jawa Barat",
+        "Spesial Honey Chicken Sauce",
+        null,
+        "Ikan Tongkol Balado, Oseng Kangkung, Tahu Goreng & Takjil Es Buah",
+        "Nasi Ayam Kecap: Nasi putih dan ayam kecap mantap gurih manis",
+        "Mangut Lele Acar (Makanan Khas Jogja)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-10",
+      "ramadan_ke": 21,
+      "menus": [
+        "Ikan tuna bumbu kuning, oseng, krupuk",
+        "Sate Lilit (Bali, Bali)",
+        "Rendang Ayam",
+        "Sate Ayam Khas Madura",
+        "Nasi Putih, Rendang Daging Gulai, Daun Singkong, Perkedel Tahu, Kerupuk, Buah, Air Mineral",
+        "Nasi Putih, Ikan Dori Dabu Dabu, Tahu Isi, Terong Balado, Kerupuk, Buah, Air Mineral (400 Porsi)",
+        "(Menunggu update)",
+        "Nasi Ayam Bumbu Rendang Komplit",
+        null,
+        "Nasi Liwet & Takjil Es Kelamud",
+        "Mariyam Chicken: Menu ayam spesial dari Mariyam fried chicken",
+        "Ayam Rica-rica (Makanan Khas Manado)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-11",
+      "ramadan_ke": 22,
+      "menus": [
+        "Opor ayam, oseng jipang tempe, sambel krupuk",
+        "Nasi Ulam (Jakarta, Jakarta)",
+        "Sop Kembang Waru",
+        "Ayam Cincane Khas Samarinda",
+        "Nasi Putih, Nila Bakar, Oseng Tempe, Sambal Lalapan, Kerupuk, Buah, Air Mineral",
+        "Nasi Putih, Ayam Goreng Kremes, Tempe Goreng, Sayur Sop Rolade, Kerupuk, Buah, Air Mineral (400 Porsi)",
+        null,
+        null,
+        null,
+        "Sego Welut & Takjil Kolak Pisang",
+        "Nasi Ayam Balado: Nasi putih dengan menu ayam balado",
+        "Soto Ayam Kudus (Makanan Khas Kudus)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-12",
+      "ramadan_ke": 23,
+      "menus": [
+        "Gudeg ayam, krecek",
+        "Nasi Jamblang (Cirebon, Jawa Barat)",
+        "Empal Gentong",
+        "Mie Aceh Khas Aceh",
+        "Nasi Putih, Ayam Garang Asam, Tumis Buncis Wortel, Tahu Isi, Kerupuk, Puding, Air Mineral",
+        "Nasi Putih, Ayam Bakar, Tahu Mekar & Tempe Goreng, Lalapan & Sambal, Kerupuk, Buah, Air Mineral (400 Porsi)",
+        null,
+        null,
+        null,
+        "Ayam Suwir, Sambel, Tumis Tempe, & Takjil Koktail Buah",
+        "Nasi Gulai Ayam: Gulai sedap ditemani nasi",
+        "Garang Asem Ayam (Makanan Khas Jawa Tengah)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-13",
+      "ramadan_ke": 24,
+      "menus": [
+        "Rendang daging, daun singkong",
+        "Nasi Minyak (Palembang, Sumatera Selatan)",
+        "Bestik Sayur",
+        "Nasi Kuning Khas Jawa Tengah",
+        "Nasi Putih, Empal Gepuk Sambal Matah, Tumis Kacang Panjang, Perkedel Kentang, Kerupuk, Puding, Air Mineral",
+        "Nasi Putih, Bandeng Presto, Rolade Semur, Tumis Kacang Wortel, Kerupuk, Pisang, Air Mineral (400 Porsi)",
+        null,
+        null,
+        null,
+        "Meatball Semur, Cah Sayur, Tahu, & Takjil Es Kuwut",
+        "Joglo Kewaregan: Spesial Menu dari Joglo Kewaregan",
+        "Brongkos Daging (Makanan Khas Jogja)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-14",
+      "ramadan_ke": 25,
+      "menus": [
+        "Rica rica ayam, tumis kacang panjang, krupuk",
+        "Gulai Tunjang (Minang, Sumatera Barat)",
+        "Sarang Bandang",
+        "Ayam Taliwang Khas Lombok",
+        "Nasi Putih, Tuna Balado, Ca Brokoli Kering, Tempe, Kerupuk, Buah, Air Mineral",
+        "Nasi Kebuli, Ayam Fillet Karage, Kentang Mustofa, Acar, Kerupuk, Pisang, Air Mineral (400 Porsi)",
+        null,
+        null,
+        null,
+        "Ayam Kremes, Sambel dan Cah Sayur & Takjil Puding",
+        "Mariyam Chicken: Menu ayam spesial dari Mariyam fried chicken",
+        "Ayam Goreng Kalasan (Makanan Khas Jogja)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-15",
+      "ramadan_ke": 26,
+      "menus": [
+        "Ayam krispi, kare buncis wortel, sambel krupuk",
+        "Ayam Tangkap (Aceh, NAD)",
+        "Sop Kembang Waru",
+        "Empal Gentong Khas Cirebon",
+        "Nasi Putih, Sate Ayam Manis, Capcay Sayur Telur Balado, Kerupuk, Puding, Air Mineral",
+        "Nasi Putih, Sapi Lada Hitam, Kentang Balado, Ca Brokoli, Kerupuk, Jeruk, Air Mineral (100 Porsi)",
+        null,
+        null,
+        null,
+        "Ayam Panggang, Sambel, Cah Sayur & Takjil Es Buah",
+        "Pecel Lele & Lalapan: Menu pecel lele mak nyuss",
+        "Gudeg Ayam (Makanan Khas Jogja)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-16",
+      "ramadan_ke": 27,
+      "menus": [
+        "Brongkos daging, tumis jipang, krupuk",
+        "Empal Gentong (Cirebon, Jawa Barat)",
+        "Ayam Kecap Orak-arik",
+        "Sate Maranggi Khas Purwakarta",
+        "Nasi Putih, Gurami Asam Manis, Capcay Sayur Sambal Goreng Telur Puyuh, Kerupuk, Puding, Air Mineral",
+        "Nasi Putih, Ayam Goreng Rempah, Tahu Goreng, Sayur Asem, Kerupuk, Buah, Air Mineral (100 Porsi)",
+        null,
+        null,
+        null,
+        "Rawon, Tempe, Krupuk, & Takjil Es Kelamud",
+        "Nasi Ayam Geprek: Nasi Putih dan Ayam Geprek Pedas Dahsyat",
+        "Pepes Ikan Bandeng (Makanan Khas Sunda)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-17",
+      "ramadan_ke": 28,
+      "menus": [
+        "Ikan tuna balado, oseng kacang panjang taoge, krupuk",
+        "Ayam Lodho (Tulungagung, Jawa Timur)",
+        "Sop Lapis",
+        "Nasi Liwet Khas Sunda",
+        "Nasi Putih, Ayam Bakar, Tumis Jamur Mie Oriental, Sambal Lalapan, Kerupuk, Buah, Air Mineral",
+        "Nasi Putih, Ayam Goreng, Perkedel Kentang, Oseng Buncis Janggel Bakso/Sosis, Kerupuk, Buah, Air Mineral (100 Porsi)",
+        null,
+        null,
+        null,
+        "Nasi Kebuli & Takjil Kolak Pisang",
+        "Nasi Rica Ayam Pedas: Nasi putih dan ayam Rica-rica pedas",
+        "Ayam Semur Kentang (Makanan Khas Betawi)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-18",
+      "ramadan_ke": 29,
+      "menus": [
+        "Tongseng ayam, lalapan kobis timun kemangi, krupuk",
+        "Nasi Balap Puyung (Lombok Tengah, NTB)",
+        "Gule Ayam",
+        "Ayam Woku Khas Manado",
+        "Nasi Putih, Ikan Kembung Balado, Tumis Taoge Tahu, Bakwan Jagung, Kerupuk, Puding, Air Mineral",
+        "Nasi Putih, Chicken Katsu, Tahu Cabe Ijo, Tumis Kacang Jipang, Kerupuk, Jeruk/Puding, Air Mineral (100 Porsi)",
+        null,
+        null,
+        null,
+        "Sate Ayam Krupuk & Takjil Koktail Buah",
+        "Nasi Ayam Lombok Ijo",
+        "Nasi Pecel Telur Dadar (Makanan Khas Madiun)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-19",
+      "ramadan_ke": 30,
+      "menus": [
+        "Opor ayam, oseng jipang tempe, sambel krupuk",
+        "Tongseng Daging (Solo, Jawa Tengah)",
+        "(Takmir)",
+        "Bakmi Jawa Khas Jawa",
+        "Nasi Putih, Ayam Teriyaki, Tumis Tahu Taoge, Bakwan Jagung, Kerupuk, Buah, Air Mineral",
+        "Nasi Putih, Ayam Bakar Bumbu Rempah, Tumis Buncis Wortel, Orek Tempe, Kerupuk, Jeruk, Air Mineral (100 Porsi)",
+        null,
+        null,
+        null,
+        "Nasi Gudeg & Takjil Es Kuwut",
+        "Nasi Opor Ayam",
+        "Ayam Pop (Makanan Khas Minang)"
+      ]
+    },
+    {
+      "tanggal": "2026-03-20",
+      "ramadan_ke": 31,
+      "menus": [
+        "Gulai daging, lalapan, krupuk",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ]
+}
