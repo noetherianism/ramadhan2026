@@ -390,9 +390,8 @@ function changeDay(dir) {
 function onSearch(e) {
   searchQuery = e.target.value.trim();
   const clearBtn = document.getElementById('searchClear');
-  const dayNav = document.getElementById('dayNav');
   clearBtn.classList.toggle('visible', searchQuery.length > 0);
-  dayNav.style.display = searchQuery ? 'none' : 'flex';
+  // Keep day nav visible during search so user can change days
   renderContent(true);
 }
 
@@ -400,7 +399,6 @@ function clearSearch() {
   document.getElementById('searchInput').value = '';
   searchQuery = '';
   document.getElementById('searchClear').classList.remove('visible');
-  document.getElementById('dayNav').style.display = 'flex';
   renderContent(true);
 }
 
@@ -515,62 +513,54 @@ function renderSearch(animate = true) {
   if (queryTokens.length === 0) { renderDay(animate); return; }
 
   const filtered = getFilteredMosques();
-  const dayResults = new Map();
-  let totalResults = 0;
+  const day = DB.jadwal[currentIdx];
+  const today = isToday(day.tanggal);
 
-  DB.jadwal.forEach((day, dayIdx) => {
-    const dayCards = [];
-    filtered.forEach(mosqueIdx => {
-      const mosque = DB.mosques[mosqueIdx];
-      const menu = day.menus[mosqueIdx] != null ? String(day.menus[mosqueIdx]) : '';
-      const { totalScore, matchedVia } = scoreItem(queryTokens, menu, mosque.nama, mosque.singkatan);
-      if (totalScore > 0) {
-        dayCards.push({ mosqueIdx, score: totalScore, via: matchedVia, menu });
-        totalResults++;
-      }
-    });
-    if (dayCards.length > 0) {
-      dayCards.sort((a, b) => b.score - a.score);
-      dayResults.set(dayIdx, { day, dayIdx, cards: dayCards, bestScore: dayCards[0]?.score || 0 });
+  // Only search within the current day
+  const matchedCards = [];
+  filtered.forEach(mosqueIdx => {
+    const mosque = DB.mosques[mosqueIdx];
+    const menu = day.menus[mosqueIdx] != null ? String(day.menus[mosqueIdx]) : '';
+    const { totalScore, matchedVia } = scoreItem(queryTokens, menu, mosque.nama, mosque.singkatan);
+    if (totalScore > 0) {
+      matchedCards.push({ mosqueIdx, score: totalScore, via: matchedVia, menu });
     }
   });
+  matchedCards.sort((a, b) => b.score - a.score);
 
-  const sortedDays = [...dayResults.values()].sort((a, b) => {
-    if (b.bestScore !== a.bestScore) return b.bestScore - a.bestScore;
-    return a.dayIdx - b.dayIdx;
-  });
-
-  let html = '', cardDelay = 0;
-  for (const { day, dayIdx, cards } of sortedDays) {
-    let cardsHTML = '';
-    for (const card of cards) {
-      cardsHTML += buildCardHTML(DB.mosques[card.mosqueIdx], card.menu, card.mosqueIdx, dayIdx, (cardDelay++) * 0.04, animate, card.via);
-    }
-    const today = isToday(day.tanggal);
-    html += `<div class="result-group ${animate ? 'slide-right' : ''}">
-      <div class="result-group-header">
-        <span class="result-group-date">${formatDateFull(day.tanggal)}</span>
-        <span class="badge badge-ramadan">R-${day.ramadan_ke}</span>
-        ${today ? '<span class="badge badge-today">Hari Ini</span>' : ''}
-        <button class="jump-btn" onclick="jumpToDay(${dayIdx})">Lihat Hari →</button>
-      </div>
-      <div class="cards-grid">${cardsHTML}</div>
-    </div>`;
+  let cardsHTML = '';
+  let cardDelay = 0;
+  for (const card of matchedCards) {
+    cardsHTML += buildCardHTML(DB.mosques[card.mosqueIdx], card.menu, card.mosqueIdx, currentIdx, (cardDelay++) * 0.04, animate, card.via);
   }
 
   const isExpanded = queryTokens.some(t => FOOD_TAXONOMY[t] || FOOD_TAXONOMY[SYNONYMS[t]]);
   const expandNote = isExpanded ? `<span class="search-expand-note">termasuk menu terkait</span>` : '';
-  const note = totalResults > 0
-    ? `<div class="search-note">${totalResults} hasil untuk "<strong>${searchQuery}</strong>" ${expandNote}</div>`
+  const note = matchedCards.length > 0
+    ? `<div class="search-note">${matchedCards.length} hasil untuk "<strong>${searchQuery}</strong>" pada ${formatDateFull(day.tanggal)} ${expandNote}</div>`
     : '';
 
-  document.getElementById('contentArea').innerHTML = note + (html || `
+  const emptyHTML = `
     <div class="empty-state">
       <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
         <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
       </svg>
-      <p>Tidak ada menu untuk "<strong>${searchQuery}</strong>"</p>
-    </div>`);
+      <p>Tidak ada menu "<strong>${searchQuery}</strong>" pada hari ini.</p>
+      <p style="font-size:0.78rem;margin-top:8px;color:var(--text-soft)">Coba pilih hari lain di kalender atas.</p>
+    </div>`;
+
+  document.getElementById('contentArea').innerHTML = `
+    <div class="${animate ? 'slide-right' : ''}">
+      <div class="day-header">
+        <div class="day-date-big">${formatDateFull(day.tanggal)}</div>
+        <div class="day-badges">
+          <span class="badge badge-ramadan">Ramadan ke-${day.ramadan_ke}</span>
+          ${today ? '<span class="badge badge-today">🌙 Hari Ini</span>' : ''}
+        </div>
+      </div>
+      ${note}
+      ${cardsHTML ? `<div class="cards-grid">${cardsHTML}</div>` : emptyHTML}
+    </div>`;
 }
 
 /* ════════════════════════════════════════════════════════════
@@ -580,7 +570,11 @@ function renderMosqueTab() {
   const today = todayStr();
   const todayIdx = DB.jadwal.findIndex(d => d.tanggal === today);
 
-  let html = '<div class="mosque-list">';
+  let html = `<div class="day-header">
+    <div class="day-date-big">Daftar Masjid</div>
+    <div class="day-badges"><span class="badge badge-ramadan">${DB.mosques.length} Masjid</span></div>
+  </div>`;
+  html += '<div class="mosque-list">';
   DB.mosques.forEach((mosque, i) => {
     const isFav = isFavorite(mosque.id);
     const mapsUrl = getMapsUrl(mosque);
@@ -686,7 +680,7 @@ function switchTab(tab, btn) {
   const searchBar = document.querySelector('.search-bar');
 
   if (tab === 'jadwal') {
-    dayNav.style.display = searchQuery ? 'none' : 'flex';
+    dayNav.style.display = 'flex';
     filterRow.style.display = 'flex';
     dateWrap.style.display = '';
     searchBar.style.display = 'flex';
@@ -696,7 +690,7 @@ function switchTab(tab, btn) {
     dateWrap.style.display = 'none';
     searchBar.style.display = 'none';
   } else if (tab === 'favorit') {
-    dayNav.style.display = searchQuery ? 'none' : 'flex';
+    dayNav.style.display = 'flex';
     filterRow.style.display = 'none';
     dateWrap.style.display = '';
     searchBar.style.display = 'none';

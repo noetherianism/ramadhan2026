@@ -44,6 +44,7 @@
   --skel-base: #1e3a30;
   --skel-shine: #264a3e;
 }
+html[data-theme="dark"] { background: #070F0D; }
 [data-theme="dark"] .header-wave svg path { fill: var(--cream); }
 [data-theme="dark"] .search-bar { background: var(--card-bg); }
 [data-theme="dark"] .search-bar input { color: var(--text); }
@@ -62,7 +63,7 @@
 
 /* ── RESET ── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; background: var(--teal-dark); }
 body {
   font-family: 'DM Sans', sans-serif;
   background: var(--cream);
@@ -182,20 +183,23 @@ body {
    DARK MODE TOGGLE
 ══════════════════════════════════════════ */
 .dark-toggle {
-  position: absolute; top: 16px; right: 16px; z-index: 12;
-  width: 42px; height: 42px;
+  position: absolute; top: 50%; right: 10px; z-index: 12;
+  transform: translateY(-50%);
+  width: 36px; height: 36px;
   border-radius: 50%;
   border: 1.5px solid rgba(232,201,106,0.4);
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.25);
   color: var(--gold-light);
   cursor: pointer;
   display: flex; align-items: center; justify-content: center;
   transition: all 0.3s;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  flex-shrink: 0;
 }
 .dark-toggle:hover { background: rgba(232,201,106,0.15); border-color: var(--gold); }
-.dark-toggle svg { width: 18px; height: 18px; position: absolute; transition: opacity 0.3s, transform 0.3s; }
+.dark-toggle:active { background: rgba(232,201,106,0.3); transform: translateY(-50%) scale(0.92); }
+.dark-toggle svg { width: 16px; height: 16px; position: absolute; transition: opacity 0.3s, transform 0.3s; }
 .dt-sun { opacity: 0; transform: rotate(-90deg) scale(0.5); }
 .dt-moon { opacity: 1; transform: rotate(0) scale(1); }
 [data-theme="dark"] .dt-sun { opacity: 1; transform: rotate(0) scale(1); }
@@ -208,6 +212,7 @@ body {
   background: var(--teal-dark);
   position: relative; overflow: hidden;
   padding: 36px 24px 100px;
+  padding-top: calc(36px + env(safe-area-inset-top, 0px));
   text-align: center;
 }
 .header-bg {
@@ -218,9 +223,10 @@ body {
   pointer-events: none;
 }
 .header-pattern {
-  position: absolute; inset: 0; opacity: 0.04;
-  background-image: repeating-conic-gradient(from 0deg at 50% 50%, rgba(255,255,255,0.5) 0deg 15deg, transparent 15deg 30deg);
-  background-size: 60px 60px;
+  position: absolute; inset: 0; opacity: 0.06;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px);
+  background-size: 32px 32px;
   pointer-events: none;
 }
 .header-inner { position: relative; z-index: 2; }
@@ -268,12 +274,12 @@ body {
   background: var(--teal-dark);
   box-shadow: 0 2px 12px rgba(0,0,0,0.2);
 }
-.date-strip-outer { overflow: hidden; position: relative; }
+.date-strip-outer { overflow: hidden; position: relative; padding-right: 52px; }
 .date-strip-outer::before, .date-strip-outer::after {
   content: ''; position: absolute; top: 0; bottom: 0; width: 48px; z-index: 2; pointer-events: none;
 }
 .date-strip-outer::before { left: 0; background: linear-gradient(to right, var(--teal-dark), transparent); }
-.date-strip-outer::after { right: 0; background: linear-gradient(to left, var(--teal-dark), transparent); }
+.date-strip-outer::after { right: 52px; background: linear-gradient(to left, var(--teal-dark), transparent); }
 .date-strip {
   display: flex; gap: 6px; padding: 12px 20px;
   overflow-x: auto; scroll-behavior: smooth;
@@ -618,14 +624,18 @@ body {
   background: none; border: none; cursor: pointer;
   color: #aaa; font-size: 0.6rem; font-weight: 600;
   font-family: 'DM Sans', sans-serif;
-  transition: color 0.2s; padding: 6px 12px;
+  transition: color 0.2s, background 0.2s; 
+  padding: 8px 20px;
   position: relative;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  border-radius: 12px;
+  -webkit-tap-highlight-color: rgba(26,92,78,0.15);
 }
-.bnav-item svg { width: 22px; height: 22px; transition: transform 0.2s; }
+.bnav-item:active { background: rgba(26,92,78,0.08); }
+.bnav-item svg { width: 22px; height: 22px; transition: transform 0.2s, color 0.2s; }
 .bnav-item.active { color: var(--teal); }
-.bnav-item.active svg { transform: scale(1.08); }
+.bnav-item.active svg { transform: scale(1.1); }
 .bnav-badge {
   position: absolute; top: 2px; right: 4px;
   min-width: 16px; height: 16px;

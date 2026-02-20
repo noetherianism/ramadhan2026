@@ -2,7 +2,7 @@
  * Service Worker — Jadwal Buka Puasa Masjid Jogja v2.0
  */
 
-const CACHE_VERSION = 'v2.0.0';
+const CACHE_VERSION = 'v2.1.0';
 const STATIC_CACHE  = `jadwal-static-${CACHE_VERSION}`;
 const DATA_CACHE    = `jadwal-data-${CACHE_VERSION}`;
 const FONT_CACHE    = `jadwal-fonts-${CACHE_VERSION}`;

@@ -55,11 +55,6 @@
     <div class="header-pattern" aria-hidden="true"></div>
     <div class="stars" id="stars" aria-hidden="true"></div>
 
-    <button class="dark-toggle" id="darkToggle" onclick="toggleDarkMode()" aria-label="Mode gelap/terang" title="Mode Gelap/Terang">
-      <svg class="dt-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.73 12.73l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-      <svg class="dt-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-    </button>
-
     <div class="header-inner">
       <svg class="moon-svg" width="56" height="56" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M55 40C55 55.5 44 68 30 68C16 68 5 55.5 5 40C5 24.5 16 12 30 12C24 18 21 28.5 21 40C21 51.5 24 62 30 68C44 68 55 24.5 55 40Z" fill="#E8C96A" opacity="0.9"/>
@@ -83,6 +78,10 @@
     <div class="date-strip-outer">
       <div class="date-strip" id="dateStrip" role="list"></div>
     </div>
+    <button class="dark-toggle" id="darkToggle" onclick="toggleDarkMode()" aria-label="Mode gelap/terang" title="Mode Gelap/Terang">
+      <svg class="dt-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.73 12.73l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      <svg class="dt-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+    </button>
   </nav>
 
   <!-- MAIN -->
@@ -130,7 +129,7 @@
       <span>Jadwal</span>
     </button>
     <button class="bnav-item" data-tab="masjid" onclick="switchTab('masjid', this)" aria-label="Masjid">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c-2 2-4 4.5-4 7a4 4 0 008 0c0-2.5-2-5-4-7z"/><path d="M5 14h14v7H5z"/><line x1="5" y1="21" x2="19" y2="21"/><line x1="12" y1="10" x2="12" y2="14"/></svg>
       <span>Masjid</span>
     </button>
     <button class="bnav-item" data-tab="favorit" onclick="switchTab('favorit', this)" aria-label="Favorit">
