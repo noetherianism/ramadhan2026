@@ -8,18 +8,114 @@
     "kota": "Yogyakarta"
   },
   "mosques": [
-    { "id": 0, "nama": "Masjid Pogung Dalangan (MPD)",         "singkatan": "MPD" },
-    { "id": 1, "nama": "Masjid Nurul Ashri (Nurash)",           "singkatan": "Nurash" },
-    { "id": 2, "nama": "Masjid Jogokariyan",                    "singkatan": "Jogokariyan" },
-    { "id": 3, "nama": "Masjid Agung Syuhada",                  "singkatan": "Syuhada" },
-    { "id": 4, "nama": "Masjid Kampus (Maskam) UGM",            "singkatan": "Maskam UGM" },
-    { "id": 5, "nama": "Masjid Mardliyyah UGM",                 "singkatan": "Mardliyyah" },
-    { "id": 6, "nama": "Masjid Ulil Albab (UII)",               "singkatan": "Ulil Albab" },
-    { "id": 7, "nama": "Masjid Al-Muqtashidin (FBE UII)",       "singkatan": "Al-Muqtashidin" },
-    { "id": 8, "nama": "Masjid UMY",                            "singkatan": "UMY" },
-    { "id": 9, "nama": "Masjid Walidah Dahlan (UNISA)",         "singkatan": "UNISA" },
-    { "id": 10, "nama": "Teras Dakwah",                         "singkatan": "Teras Dakwah" },
-    { "id": 11, "nama": "Masjid K.H. Sudja' (Ramadan Fest #5)", "singkatan": "KH Sudja" }
+    {
+      "id": 0,
+      "nama": "Masjid Pogung Dalangan (MPD)",
+      "singkatan": "MPD",
+      "kecamatan": "Mlati, Sleman",
+      "lat": -7.7654,
+      "lng": 110.3742,
+      "alamat": "Jl. Pogung Dalangan, Sinduadi, Mlati, Sleman"
+    },
+    {
+      "id": 1,
+      "nama": "Masjid Nurul Ashri (Nurash)",
+      "singkatan": "Nurash",
+      "kecamatan": "Depok, Sleman",
+      "lat": -7.7659,
+      "lng": 110.3838,
+      "alamat": "Jl. Laksda Adisucipto, Caturtunggal, Depok, Sleman"
+    },
+    {
+      "id": 2,
+      "nama": "Masjid Jogokariyan",
+      "singkatan": "Jogokariyan",
+      "kecamatan": "Mantrijeron, Yogyakarta",
+      "lat": -7.8094,
+      "lng": 110.3537,
+      "alamat": "Jl. Jogokariyan MJ III/340, Mantrijeron, Yogyakarta"
+    },
+    {
+      "id": 3,
+      "nama": "Masjid Agung Syuhada",
+      "singkatan": "Syuhada",
+      "kecamatan": "Gondokusuman, Yogyakarta",
+      "lat": -7.7825,
+      "lng": 110.3751,
+      "alamat": "Jl. I Dewa Nyoman Oka No.13, Kotabaru, Gondokusuman, Yogyakarta"
+    },
+    {
+      "id": 4,
+      "nama": "Masjid Kampus (Maskam) UGM",
+      "singkatan": "Maskam UGM",
+      "kecamatan": "Depok, Sleman",
+      "lat": -7.771,
+      "lng": 110.3779,
+      "alamat": "Kampus UGM, Caturtunggal, Depok, Sleman"
+    },
+    {
+      "id": 5,
+      "nama": "Masjid Mardliyyah UGM",
+      "singkatan": "Mardliyyah",
+      "kecamatan": "Depok, Sleman",
+      "lat": -7.7681,
+      "lng": 110.3843,
+      "alamat": "Kampus UGM Timur, Caturtunggal, Depok, Sleman"
+    },
+    {
+      "id": 6,
+      "nama": "Masjid Ulil Albab (UII)",
+      "singkatan": "Ulil Albab",
+      "kecamatan": "Ngaglik, Sleman",
+      "lat": -7.6894,
+      "lng": 110.4109,
+      "alamat": "Jl. Kaliurang Km 14.5, Ngaglik, Sleman"
+    },
+    {
+      "id": 7,
+      "nama": "Masjid Al-Muqtashidin (FBE UII)",
+      "singkatan": "Al-Muqtashidin",
+      "kecamatan": "Depok, Sleman",
+      "lat": -7.7488,
+      "lng": 110.4044,
+      "alamat": "Jl. Ringroad Utara, Condong Catur, Depok, Sleman"
+    },
+    {
+      "id": 8,
+      "nama": "Masjid UMY",
+      "singkatan": "UMY",
+      "kecamatan": "Kasihan, Bantul",
+      "lat": -7.8137,
+      "lng": 110.3227,
+      "alamat": "Jl. Brawijaya, Tamantirto, Kasihan, Bantul"
+    },
+    {
+      "id": 9,
+      "nama": "Masjid Walidah Dahlan (UNISA)",
+      "singkatan": "UNISA",
+      "kecamatan": "Ngampilan, Yogyakarta",
+      "lat": -7.799,
+      "lng": 110.3575,
+      "alamat": "Jl. K.H. Ahmad Dahlan, Notoprajan, Ngampilan, Yogyakarta"
+    },
+    {
+      "id": 10,
+      "nama": "Teras Dakwah",
+      "singkatan": "Teras Dakwah",
+      "kecamatan": "Depok, Sleman",
+      "lat": -7.7739,
+      "lng": 110.3949,
+      "alamat": "Jl. Kaliurang Km 5.5, Caturtunggal, Depok, Sleman"
+    },
+    {
+      "id": 11,
+      "nama": "Masjid K.H. Sudja' (Ramadan Fest #5)",
+      "singkatan": "KH Sudja",
+      "kecamatan": "Kotagede, Yogyakarta",
+      "lat": -7.8151,
+      "lng": 110.395,
+      "alamat": "Jl. Kemasan, Purbayan, Kotagede, Yogyakarta"
+    }
   ],
   "jadwal": [
     {
