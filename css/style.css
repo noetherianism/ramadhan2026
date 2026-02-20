@@ -84,10 +84,12 @@ body {
   z-index: 1000;
   transition: opacity 0.5s, visibility 0.5s;
 }
-.loading-screen.hidden { opacity: 0; visibility: hidden; }
+.loading-screen.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+.loading-screen.removed { display: none !important; }
 .loading-content { text-align: center; width: 90%; max-width: 400px; }
 .loading-moon {
   width: 56px; height: 56px;
+  max-width: 56px; max-height: 56px;
   animation: floatMoon 2s ease-in-out infinite;
   margin-bottom: 16px;
   filter: drop-shadow(0 0 16px rgba(240, 201, 122, 0.5));
@@ -169,6 +171,8 @@ body {
 .ptr.refreshing { height: 48px; }
 .ptr-icon {
   width: 18px; height: 18px;
+  max-width: 18px; max-height: 18px;
+  flex-shrink: 0;
   transition: transform 0.2s;
 }
 .ptr.refreshing .ptr-icon { animation: spin 0.8s linear infinite; }
@@ -178,16 +182,17 @@ body {
    DARK MODE TOGGLE
 ══════════════════════════════════════════ */
 .dark-toggle {
-  position: absolute; top: 16px; right: 16px; z-index: 10;
-  width: 40px; height: 40px;
+  position: absolute; top: 16px; right: 16px; z-index: 12;
+  width: 42px; height: 42px;
   border-radius: 50%;
-  border: 1.5px solid rgba(232,201,106,0.25);
-  background: rgba(255,255,255,0.06);
+  border: 1.5px solid rgba(232,201,106,0.4);
+  background: rgba(0,0,0,0.2);
   color: var(--gold-light);
   cursor: pointer;
   display: flex; align-items: center; justify-content: center;
   transition: all 0.3s;
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 .dark-toggle:hover { background: rgba(232,201,106,0.15); border-color: var(--gold); }
 .dark-toggle svg { width: 18px; height: 18px; position: absolute; transition: opacity 0.3s, transform 0.3s; }

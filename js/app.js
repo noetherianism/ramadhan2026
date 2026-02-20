@@ -243,8 +243,10 @@ function showError() {
    HELPERS
 ════════════════════════════════════════════════════════════ */
 function isMenuValid(menu) {
-  if (!menu || menu === '-' || menu === 'null') return false;
-  if (menu.startsWith('(')) return false;
+  if (menu == null || menu === undefined) return false;
+  const trimmed = String(menu).trim();
+  if (!trimmed || trimmed === '-' || trimmed === 'null' || trimmed === 'undefined') return false;
+  if (/^\(.*\)$/.test(trimmed)) return false;
   return true;
 }
 
@@ -277,7 +279,10 @@ function hideLoading() {
   const el = document.getElementById('loadingScreen');
   if (el) {
     el.classList.add('hidden');
-    setTimeout(() => el.remove(), 600);
+    setTimeout(() => {
+      el.classList.add('removed');
+      el.remove();
+    }, 600);
   }
 }
 
@@ -333,10 +338,18 @@ function buildFilterChips() {
     btn.className = 'filter-chip';
     btn.dataset.filter = kec;
     btn.textContent = kec.split(',')[0]; // Show just "Depok" not "Depok, Sleman"
-    btn.onclick = () => setFilter(kec, btn);
     row.appendChild(btn);
   });
 }
+
+// Event delegation for filter chips
+document.addEventListener('click', (e) => {
+  const chip = e.target.closest('.filter-chip[data-filter]');
+  if (!chip) return;
+  const filter = chip.dataset.filter;
+  if (!filter) return;
+  setFilter(filter, chip);
+});
 
 function setFilter(filter, btn) {
   activeFilter = filter;
@@ -433,7 +446,7 @@ function buildCardHTML(mosque, menu, mosqueIdx, cardIdx, delay = 0, animate = tr
         ? `<div class="card-menu${isLong ? ' clamp' : ''}" id="${menuId}">${menu}</div>
            ${viaBadge}
            ${isLong ? `<button class="card-expand" onclick="toggleExpand('${menuId}', this)">Lihat lebih →</button>` : ''}`
-        : `<div class="card-no-menu">${menu || 'Belum ada jadwal'}</div>`}
+        : `<div class="card-no-menu">Belum ada jadwal</div>`}
       <div class="card-actions-bar">
         <a href="${mapsUrl}" target="_blank" rel="noopener" class="card-action-btn" onclick="event.stopPropagation()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -460,7 +473,8 @@ function renderDay(animate = true) {
   let cardsHTML = '';
   let cardDelay = 0;
   filtered.forEach(i => {
-    cardsHTML += buildCardHTML(DB.mosques[i], day.menus[i], i, currentIdx, (cardDelay++) * 0.04, animate);
+    const menu = day.menus[i] != null ? day.menus[i] : null;
+    cardsHTML += buildCardHTML(DB.mosques[i], menu, i, currentIdx, (cardDelay++) * 0.04, animate);
   });
 
   if (filtered.length === 0 && activeFilter === 'favorites') {
@@ -508,7 +522,7 @@ function renderSearch(animate = true) {
     const dayCards = [];
     filtered.forEach(mosqueIdx => {
       const mosque = DB.mosques[mosqueIdx];
-      const menu = day.menus[mosqueIdx] || '';
+      const menu = day.menus[mosqueIdx] != null ? String(day.menus[mosqueIdx]) : '';
       const { totalScore, matchedVia } = scoreItem(queryTokens, menu, mosque.nama, mosque.singkatan);
       if (totalScore > 0) {
         dayCards.push({ mosqueIdx, score: totalScore, via: matchedVia, menu });
@@ -572,7 +586,9 @@ function renderMosqueTab() {
     const mapsUrl = getMapsUrl(mosque);
     // Get today's menu
     let todayMenu = null;
-    if (todayIdx >= 0) todayMenu = DB.jadwal[todayIdx].menus[i];
+    if (todayIdx >= 0 && DB.jadwal[todayIdx].menus[i] != null) {
+      todayMenu = DB.jadwal[todayIdx].menus[i];
+    }
     const hasMenu = isMenuValid(todayMenu);
 
     html += `
@@ -629,7 +645,8 @@ function renderFavoritesTab() {
   favorites.forEach(favId => {
     const i = DB.mosques.findIndex(m => m.id === favId);
     if (i < 0) return;
-    cardsHTML += buildCardHTML(DB.mosques[i], day.menus[i], i, currentIdx, (cardDelay++) * 0.04, true);
+    const menu = day.menus[i] != null ? day.menus[i] : null;
+    cardsHTML += buildCardHTML(DB.mosques[i], menu, i, currentIdx, (cardDelay++) * 0.04, true);
   });
 
   document.getElementById('contentArea').innerHTML = `
