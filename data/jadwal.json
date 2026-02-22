@@ -13,108 +13,120 @@
       "nama": "Masjid Pogung Dalangan (MPD)",
       "singkatan": "MPD",
       "kecamatan": "Mlati, Sleman",
-      "lat": -7.7654,
-      "lng": 110.3742,
-      "alamat": "Jl. Pogung Dalangan, Sinduadi, Mlati, Sleman"
+      "lat": -7.760459,
+      "lng": 110.373293,
+      "alamat": "Jl. Pogung Dalangan, Sinduadi, Mlati, Sleman",
+      "maps": "https://maps.app.goo.gl/2GQx9KcXmVAejLfu5"
     },
     {
       "id": 1,
       "nama": "Masjid Nurul Ashri (Nurash)",
       "singkatan": "Nurash",
       "kecamatan": "Depok, Sleman",
-      "lat": -7.7659,
-      "lng": 110.3838,
-      "alamat": "Jl. Laksda Adisucipto, Caturtunggal, Depok, Sleman"
+      "lat": -7.762468,
+      "lng": 110.389693,
+      "alamat": "Jl. Laksda Adisucipto, Caturtunggal, Depok, Sleman",
+      "maps": "https://maps.app.goo.gl/xJV6oFAoynsZRrxU9"
     },
     {
       "id": 2,
       "nama": "Masjid Jogokariyan",
       "singkatan": "Jogokariyan",
       "kecamatan": "Mantrijeron, Yogyakarta",
-      "lat": -7.8094,
-      "lng": 110.3537,
-      "alamat": "Jl. Jogokariyan MJ III/340, Mantrijeron, Yogyakarta"
+      "lat": -7.824209,
+      "lng": 110.364533,
+      "alamat": "Jl. Jogokariyan MJ III/340, Mantrijeron, Yogyakarta",
+      "maps": "https://maps.app.goo.gl/HMuKZofMnxJPKyMs6"
     },
     {
       "id": 3,
       "nama": "Masjid Agung Syuhada",
       "singkatan": "Syuhada",
       "kecamatan": "Gondokusuman, Yogyakarta",
-      "lat": -7.7825,
-      "lng": 110.3751,
-      "alamat": "Jl. I Dewa Nyoman Oka No.13, Kotabaru, Gondokusuman, Yogyakarta"
+      "lat": -7.786171,
+      "lng": 110.369059,
+      "alamat": "Jl. I Dewa Nyoman Oka No.13, Kotabaru, Gondokusuman, Yogyakarta",
+      "maps": "https://maps.app.goo.gl/g7TSHUy2nfpohEwH8"
     },
     {
       "id": 4,
       "nama": "Masjid Kampus (Maskam) UGM",
       "singkatan": "Maskam UGM",
       "kecamatan": "Depok, Sleman",
-      "lat": -7.771,
-      "lng": 110.3779,
-      "alamat": "Kampus UGM, Caturtunggal, Depok, Sleman"
+      "lat": -7.77291,
+      "lng": 110.379756,
+      "alamat": "Kampus UGM, Caturtunggal, Depok, Sleman",
+      "maps": "https://maps.app.goo.gl/jnfRUDEffjoGfjzM8"
     },
     {
       "id": 5,
       "nama": "Masjid Mardliyyah UGM",
       "singkatan": "Mardliyyah",
       "kecamatan": "Depok, Sleman",
-      "lat": -7.7681,
-      "lng": 110.3843,
-      "alamat": "Kampus UGM Timur, Caturtunggal, Depok, Sleman"
+      "lat": -7.769609,
+      "lng": 110.373467,
+      "alamat": "Kampus UGM Timur, Caturtunggal, Depok, Sleman",
+      "maps": "https://maps.app.goo.gl/rwsfxoBPyKhWJKuH8"
     },
     {
       "id": 6,
       "nama": "Masjid Ulil Albab (UII)",
       "singkatan": "Ulil Albab",
       "kecamatan": "Ngaglik, Sleman",
-      "lat": -7.6894,
-      "lng": 110.4109,
-      "alamat": "Jl. Kaliurang Km 14.5, Ngaglik, Sleman"
+      "lat": -7.687447,
+      "lng": 110.415436,
+      "alamat": "Jl. Kaliurang Km 14.5, Ngaglik, Sleman",
+      "maps": "https://maps.app.goo.gl/ZFSmqghGnUC27Mu59"
     },
     {
       "id": 7,
       "nama": "Masjid Al-Muqtashidin (FBE UII)",
       "singkatan": "Al-Muqtashidin",
       "kecamatan": "Depok, Sleman",
-      "lat": -7.7488,
-      "lng": 110.4044,
-      "alamat": "Jl. Ringroad Utara, Condong Catur, Depok, Sleman"
+      "lat": -7.760767,
+      "lng": 110.411781,
+      "alamat": "Jl. Ringroad Utara, Condong Catur, Depok, Sleman",
+      "maps": "https://maps.app.goo.gl/6j44tsTZGDeoMTXR7"
     },
     {
       "id": 8,
-      "nama": "Masjid UMY",
+      "nama": "Masjid Universitas Muhammadiyah Yogyakarta (UMY)",
       "singkatan": "UMY",
       "kecamatan": "Kasihan, Bantul",
-      "lat": -7.8137,
-      "lng": 110.3227,
-      "alamat": "Jl. Brawijaya, Tamantirto, Kasihan, Bantul"
+      "lat": -7.810465,
+      "lng": 110.320893,
+      "alamat": "Jl. Brawijaya, Tamantirto, Kasihan, Bantul",
+      "maps": "https://maps.app.goo.gl/hbUqoVgnxHdX6C3W7"
     },
     {
       "id": 9,
-      "nama": "Masjid Walidah Dahlan (UNISA)",
+      "nama": "Masjid Walidah Dahlan (UNISA Yogyakarta)",
       "singkatan": "UNISA",
-      "kecamatan": "Ngampilan, Yogyakarta",
-      "lat": -7.799,
-      "lng": 110.3575,
-      "alamat": "Jl. K.H. Ahmad Dahlan, Notoprajan, Ngampilan, Yogyakarta"
+      "kecamatan": "Gamping, Sleman",
+      "lat": -7.767227,
+      "lng": 110.333677,
+      "alamat": "UNISA Yogyakarta, Gamping, Sleman",
+      "maps": "https://maps.app.goo.gl/G22JCRAmiiNXagGK9"
     },
     {
       "id": 10,
       "nama": "Teras Dakwah",
       "singkatan": "Teras Dakwah",
-      "kecamatan": "Depok, Sleman",
-      "lat": -7.7739,
-      "lng": 110.3949,
-      "alamat": "Jl. Kaliurang Km 5.5, Caturtunggal, Depok, Sleman"
+      "kecamatan": "Umbulharjo, Yogyakarta",
+      "lat": -7.82643,
+      "lng": 110.385261,
+      "alamat": "Teras Dakwah, Yogyakarta",
+      "maps": "https://maps.app.goo.gl/ucRXZV4T1ijL8SWH6"
     },
     {
       "id": 11,
       "nama": "Masjid K.H. Sudja' (Ramadan Fest #5)",
-      "singkatan": "KH Sudja",
-      "kecamatan": "Kotagede, Yogyakarta",
-      "lat": -7.8151,
-      "lng": 110.395,
-      "alamat": "Jl. Kemasan, Purbayan, Kotagede, Yogyakarta"
+      "singkatan": "KH Sudja'",
+      "kecamatan": "Kasihan, Bantul",
+      "lat": -7.801672,
+      "lng": 110.316946,
+      "alamat": "Masjid K.H. Sudja', Kasihan, Bantul",
+      "maps": "https://maps.app.goo.gl/kLGC6zVTaNLB8Vn97"
     }
   ],
   "jadwal": [
@@ -132,7 +144,7 @@
         "(Belum ada jadwal)",
         null,
         "Ayam Goreng Tepung, Capcay Sayur, Tempe Goreng & Takjil Kolak Pisang",
-        "Joglo Resodinomo: Spesial menu dari Joglo Resodinomo",
+        "Joglo Resodinomo: Spesial menu dari Joglo Resodinomo yang siap menggoyang lidah dan memberi asupan nutrisi",
         "Soto Daging (Makanan Khas Betawi)"
       ]
     },
@@ -150,7 +162,7 @@
         "Spesial Chicken Katsu",
         "Nasi, Ayam kentucy, tumis jipang wortel, tahu asin, saos saset, Es Sirup Melon Selasih",
         "Ayam Kecap, Sup, Tahu & Takjil Koktail Buah",
-        "Bistik Galantin Semur: Nasi putih dan ayam bakar dilengkapi lalapan sehat",
+        "Bistik Galantin Semur: Nasi putih dan ayam bakar dilengkapi lalapan sehat, Air Mineral dan kurma",
         "Opor Ayam (Makanan Khas Surabaya)"
       ]
     },
@@ -168,7 +180,7 @@
         "Crispy Chicken Biryani",
         "Nasi, beef blackpaper, Tumis baby buncis bakso ikan, tempe goreng, Cocopandan es",
         "Bakmoi & Takjil Es Dawet",
-        "Joglo Kewaregan: Spesial Menu dari Joglo Kewaregan",
+        "Joglo Kewaregan: Spesial Menu dari Joglo Kewaregan yang siap menjadi santapan berbuka yang mak nyuuusss",
         "Ikan Patin Woku Kemangi (Makanan Khas Manado)"
       ]
     },
@@ -186,7 +198,7 @@
         "Spesial Ayam Daun Jeruk",
         "Nasi, Ayam goreng bacem, oseng tempe lombok ijo, bakwan jagung, Kolak pisang",
         "Gurame Fillet, Capcay Sayur, Bihun, Kerupuk & Takjil Puding",
-        "BM3: Hidangan Spesial dari BM3",
+        "BM3: Hidangan Spesial dari BM3 yang mampu menjadi teman berbuka yang asyik dan bernutrisi",
         "Telur Balado Sayur Nangka Santan (Makanan Khas Manado)"
       ]
     },
@@ -204,7 +216,7 @@
         "Crispy Chicken Steak",
         "Nasi, rica rica ayam, lalapan kol dan cabe utuh, tempe garit, kerupuk, Stup jambu",
         "Sate Ayam, Kerupuk, & Takjil Es Buah",
-        "Nasi Ayam Balado: Nasi putih dengan menu ayam balado",
+        "Nasi Ayam Balado: Nasi putih dengan menu ayam balado yang pedas gurihnya nikmat plus air mineral dan kurma",
         "Ayam Bakar Areh (Makanan Khas Klaten)"
       ]
     },
@@ -222,7 +234,7 @@
         "Ayam Goreng Rempang Komplit",
         "Nasi, Chiken katsu, orak arik buncis wortel, Tahu cabe garam, Kolak ubi",
         "Telur Balado, Bihun Goreng, Tumis Sayur & Takjil Kolak Pisang",
-        "Nasi Pindang Balado: Nasi putih dan Pindang Balado pedas nikmat",
+        "Nasi Pindang Balado: Nasi putih dan Pindang Balado pedas nikmat hadir bersama Air Mineral dan kurma",
         "Sayur Ndeso Telur (Makanan Khas Klaten)"
       ]
     },
@@ -240,7 +252,7 @@
         "Grilled Chicken Rice",
         "Nasi, sosis asam manis, cap cay jamur kuping, nugget goreng, orange es",
         "Opor Ayam, Krupuk & Takjil Koktail Buah",
-        "Nasi Ayam Kecap: Nasi putih dan ayam kecap mantap gurih manis",
+        "Nasi Ayam Kecap: Nasi putih dan ayam kecap mantap gurih manis siap jadi santapan bareng Air Mineral dan kurma",
         "Nasi Sate Ayam Madura (Makanan Khas Madura)"
       ]
     },
@@ -258,7 +270,7 @@
         "Spesial Ayam Kremes Jumbo",
         "Nasi, beef blakpeper, saute mix vegetable, kerupuk, Es tea",
         "Nila bakar, Tumis Sayur, Tahu Sambel & Takjil Es Kuwut",
-        "Gudeg Hj. Rini: Hidangan khas Jogja banget",
+        "Gudeg Hj. Rini: Hidangan khas Jogja banget, wajib banget buat pecinta gudeg yang manis gurih",
         "Soto Lamongan (Makanan Khas Lamongan)"
       ]
     },
@@ -276,7 +288,7 @@
         "Nasi Bakar Ayam Extra Telur",
         "Nasi, Ayam bakar taliwang, tumis kacang panjang wortel, jamur krispy, Stup nanas",
         "Ayam Bakar, Sambel, Capcay Sayur & Takjil Puding",
-        "Nasi Rica Ayam Pedas: Nasi putih dan ayam Rica-rica pedas",
+        "Nasi Rica Ayam Pedas: Nasi putih dan ayam Rica-rica pedas level up plus air mineral dan kurma siap menemani buka puasamu",
         "Nasi Padang Lele (Makanan Khas Minang)"
       ]
     },
@@ -294,7 +306,7 @@
         "Spesial Nasi Daun Jeruk Ayam Serundeng",
         "Nasi, Ayam geprek, lalapan (kol dan timun), tempe garit, sambel bawang, Leci es",
         "Ayam Kremes, Cah Sayur, Sambel, Krupuk & Takjil Es Buah",
-        "Joglo Kewaregan: Spesial Menu dari Joglo Kewaregan",
+        "Joglo Kewaregan: Spesial Menu dari Joglo Kewaregan yang siap menjadi santapan berbuka yang mak nyuuusss",
         "Special Menu"
       ]
     },
@@ -312,7 +324,7 @@
         "Spesial Lele Bakar Asap",
         "Nasi, bandeng presto goreng telur, tumis jipang kacang panjang, sambel bawang, tahu asin, Es Buah",
         "Gule Ayam, Lalap, Krupuk, & Takjil Kolak Pisang",
-        "BM3: Hidangan Spesial dari BM3",
+        "BM3: Hidangan Spesial dari BM3 yang mampu menjadi teman berbuka yang asyik dan bernutrisi",
         "Ayam Woku Belanga (Makanan Khas Manado)"
       ]
     },
@@ -330,7 +342,7 @@
         "Nasi Ayam Kuah Gulai Komplit",
         "Nasi, lele goreng, lalapan padang, kuah padang, sambel ijo, Es buah",
         "Ayam Lengkuas, Sup, Perkedel & Takjil Koktail Buah",
-        "Nasi Telur Balado: Nasi putih dengan menu telur balado",
+        "Nasi Telur Balado: Nasi putih dengan menu telur balado yang nikmat sedap ditambah air mineral dan kurma",
         "Gado-gado Telur Rebus (Makanan Khas Jakarta)"
       ]
     },
@@ -348,7 +360,7 @@
         "Spesial Ayam Rica Komplit",
         "Nasi, Ayam teriyaki, salad bento (kol dan wortel), tahu bakso goreng, saos mayo pedas, Es kopyor",
         "Nasi Kebuli/Briyani & Takjil Es Kuwut",
-        "Fried Chicken Berkah: Nasi putih dan ayam goreng gurih",
+        "Fried Chicken Berkah: Nasi putih dan ayam goreng gurih siap mengisi berbuka puasamu plus air mineral dan kurma",
         "Ikan Kembung Kuah Kuning (Makanan Khas Papua/Maluku)"
       ]
     },
@@ -384,7 +396,7 @@
         "Black Pepper Chicken and Rice",
         "Nasi, Nila bakar madu, lalapan (kemangi timun selada), sambel bawang, Strawberry es",
         "Soto Ayam, Perkedel, Krupuk & Takjil Es Buah",
-        "Aqiqah Al-Kautsar: Menu spesial dari Aqiqah Al-Kautsar",
+        "Aqiqah Al-Kautsar: Menu spesial dari Aqiqah Al-Kautsar yang dijamin nikmat",
         "Soto Banjar (Makanan Khas Banjarmasin)"
       ]
     },
@@ -402,7 +414,7 @@
         "Grilled Chicken and Rice",
         "Nasi, Balado ayam, kering tempe kacang tanah, bakwan sayur, Es capucino cincau",
         "Ayam Bakar, Sambel, Capcay Sayur & Takjil Kolak Pisang",
-        "Nasi Sarden Pindang: Nasi Sarden Bumbu Pindang",
+        "Nasi Sarden Pindang: Nasi Sarden Bumbu Pindang, menu aman tanpa duri tapi sedap mantap",
         "Gulai Ayam Kubis Oseng (Makanan Khas Sumatera)"
       ]
     },
@@ -420,7 +432,7 @@
         "Crispy Chicken Biryani",
         null,
         "Mangut Lele, Krupuk & Takjil Koktail Buah",
-        "Q-Chicken: Ayam goreng dari brand Q-Chicken",
+        "Q-Chicken: Ayam goreng dari brand Q-Chicken yang jelas pasti nikmat",
         "Empal Gentong (Makanan Khas Cirebon)"
       ]
     },
@@ -438,7 +450,7 @@
         "Chicken Curry with Biryani Rice",
         null,
         "Nasi Kebuli/Briyani & Takjil Es Kuwut",
-        "BM3: Hidangan Spesial dari BM3",
+        "BM3: Hidangan Spesial dari BM3 yang mampu menjadi teman berbuka yang asyik dan bernutrisi",
         "Ayam Goreng Lengkuas (Makanan Khas Bandung)"
       ]
     },
@@ -456,7 +468,7 @@
         "Spesial Lele Bakar Asap",
         null,
         "Tongseng Ayam, Krupuk, Tempe & Takjil Puding",
-        "Nasi Ayam Bakar: Nasi putih dan ayam dengan bumbu bakar",
+        "Nasi Ayam Bakar: Nasi putih dan ayam dengan bumbu bakar dilengkapi lalapan sehat, Air Mineral dan kurma",
         "Nasi Uduk Ayam (Makanan Khas Jakarta)"
       ]
     },
@@ -474,7 +486,7 @@
         "Spesial Honey Chicken Sauce",
         null,
         "Ikan Tongkol Balado, Oseng Kangkung, Tahu Goreng & Takjil Es Buah",
-        "Nasi Ayam Kecap: Nasi putih dan ayam kecap mantap gurih manis",
+        "Nasi Ayam Kecap: Nasi putih dan ayam kecap mantap gurih manis siap jadi santapan bareng Air Mineral dan kurma",
         "Mangut Lele Acar (Makanan Khas Jogja)"
       ]
     },
@@ -510,7 +522,7 @@
         null,
         null,
         "Sego Welut & Takjil Kolak Pisang",
-        "Nasi Ayam Balado: Nasi putih dengan menu ayam balado",
+        "Nasi Ayam Balado: Nasi putih dengan menu ayam balado yang pedas gurihnya nikmat plus air mineral dan kurma",
         "Soto Ayam Kudus (Makanan Khas Kudus)"
       ]
     },
@@ -528,7 +540,7 @@
         null,
         null,
         "Ayam Suwir, Sambel, Tumis Tempe, & Takjil Koktail Buah",
-        "Nasi Gulai Ayam: Gulai sedap ditemani nasi",
+        "Nasi Gulai Ayam: Gulai sedap ditemani nasi, plus air mineral & kurma",
         "Garang Asem Ayam (Makanan Khas Jawa Tengah)"
       ]
     },
@@ -546,7 +558,7 @@
         null,
         null,
         "Meatball Semur, Cah Sayur, Tahu, & Takjil Es Kuwut",
-        "Joglo Kewaregan: Spesial Menu dari Joglo Kewaregan",
+        "Joglo Kewaregan: Spesial Menu dari Joglo Kewaregan yang siap menggoyang lidah dan memberi asupan nutrisi",
         "Brongkos Daging (Makanan Khas Jogja)"
       ]
     },
@@ -582,7 +594,7 @@
         null,
         null,
         "Ayam Panggang, Sambel, Cah Sayur & Takjil Es Buah",
-        "Pecel Lele & Lalapan: Menu pecel lele mak nyuss",
+        "Pecel Lele & Lalapan: Menu pecel lele mak nyuss dengan cita rasa yang selalu melekat di lidah",
         "Gudeg Ayam (Makanan Khas Jogja)"
       ]
     },
@@ -600,7 +612,7 @@
         null,
         null,
         "Rawon, Tempe, Krupuk, & Takjil Es Kelamud",
-        "Nasi Ayam Geprek: Nasi Putih dan Ayam Geprek Pedas Dahsyat",
+        "Nasi Ayam Geprek: Nasi Putih dan Ayam Geprek Pedas Dahsyat pilihan menu paling sedap nikmat",
         "Pepes Ikan Bandeng (Makanan Khas Sunda)"
       ]
     },
@@ -618,7 +630,7 @@
         null,
         null,
         "Nasi Kebuli & Takjil Kolak Pisang",
-        "Nasi Rica Ayam Pedas: Nasi putih dan ayam Rica-rica pedas",
+        "Nasi Rica Ayam Pedas: Nasi putih dan ayam Rica-rica pedas level up plus air mineral dan kurma",
         "Ayam Semur Kentang (Makanan Khas Betawi)"
       ]
     },
@@ -656,24 +668,6 @@
         "Nasi Gudeg & Takjil Es Kuwut",
         "Nasi Opor Ayam",
         "Ayam Pop (Makanan Khas Minang)"
-      ]
-    },
-    {
-      "tanggal": "2026-03-20",
-      "ramadan_ke": 31,
-      "menus": [
-        "Gulai daging, lalapan, krupuk",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
       ]
     }
   ]
