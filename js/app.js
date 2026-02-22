@@ -372,9 +372,14 @@ function goToDay(idx, dir) {
   if (idx < 0 || idx >= DB.jadwal.length) return;
   direction = (dir !== undefined) ? dir : (idx > currentIdx ? 1 : -1);
   currentIdx = idx;
-  buildDateStrip();
-  scrollPillIntoView(idx);
+  updateDateStripActive(idx);
   renderContent(true);
+}
+
+function updateDateStripActive(idx) {
+  const pills = document.getElementById('dateStrip').querySelectorAll('.date-pill');
+  pills.forEach((p, i) => p.classList.toggle('active', i === idx));
+  scrollPillIntoView(idx);
 }
 
 function changeDay(dir) {
@@ -811,6 +816,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.addEventListener('touchend', (e) => {
     if (searchQuery || activeTab !== 'jadwal') return;
+    // Jangan trigger swipe hari jika user sedang scroll date strip
+    if (e.target.closest('#dateStrip') || e.target.closest('.date-nav-wrap')) return;
     const dx = e.changedTouches[0].clientX - touchStartX;
     const dy = e.changedTouches[0].clientY - touchStartY;
     // Only swipe if horizontal movement is dominant
