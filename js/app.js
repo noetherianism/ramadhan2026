@@ -306,13 +306,29 @@ function buildStars() {
 function buildDateStrip() {
   const strip = document.getElementById('dateStrip');
   strip.innerHTML = '';
+
+  let touchStartX = 0;
+  let isDragging = false;
+
+  strip.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+    isDragging = false;
+  }, { passive: true });
+
+  strip.addEventListener('touchmove', (e) => {
+    if (Math.abs(e.touches[0].clientX - touchStartX) > 6) isDragging = true;
+  }, { passive: true });
+
   DB.jadwal.forEach((day, i) => {
     const d = new Date(day.tanggal + 'T00:00:00');
     const pill = document.createElement('button');
     pill.className = 'date-pill' + (i === currentIdx ? ' active' : '') + (isToday(day.tanggal) ? ' today-pill' : '');
     pill.setAttribute('aria-label', formatDateFull(day.tanggal));
     pill.innerHTML = `<span class="pill-day">${DAY_SHORT[d.getDay()]}</span><span class="pill-num">${d.getDate()}</span><span class="pill-r">R-${day.ramadan_ke}</span>`;
-    pill.addEventListener('click', () => goToDay(i));
+    pill.addEventListener('click', () => {
+      if (isDragging) return;
+      goToDay(i);
+    });
     strip.appendChild(pill);
   });
 }
